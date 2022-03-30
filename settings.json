@@ -1,0 +1,268 @@
+{
+  "bracketPairColorizer.depreciation-notice": false,
+  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.rulers": [80],
+  "editor.wordWrapColumn": 80,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.gpuAcceleration": "off",
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.editorAssociations": {
+    "*.class": "default"
+  },
+  "editor.tokenColorCustomizations": {
+    "[After Dark No Italics]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.function.member",
+          "settings": {
+            "foreground": "#E6A26F",
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[Omni]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language",
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#B790FF"
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#dadada"
+          }
+        }
+      ]
+    },
+    "[Dark Plus Darcula (IntelliJ imitation)]": {
+      "textMateRules": [
+        {
+          "scope":  "keyword.type",
+          "settings": {
+            "foreground": "#CC7832",
+          }
+        },
+        {
+          "scope":  "storage.modifier.java",
+          "settings": {
+            "foreground": "#CC7832",
+          }
+        },
+        {
+          "scope":  "variable.other.enummember",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope":  "variable.other.constant.property",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope":  "entity.name.function",
+          "settings": {
+            "foreground": "#eeb14f"
+          }
+        },
+        {
+          "scope":  "keyword.other",
+          "settings": {
+            "foreground": "#CC7832",
+          }
+        }
+      ]
+    },
+    "[★★★★★ DARCULA ★★★★★]": {
+      "textMateRules": [
+        {
+          "scope": "string",
+          "settings": {
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    },
+    "[GitHub Dark Mode]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language",
+          "settings": {
+            "foreground": "#FF7B72",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#FFA657",
+          }
+        },
+        {
+          "scope": "meta.object.member",
+          "settings": {
+            "foreground": "#2BBAC5",
+          }
+        },
+        {
+          "scope": "entity.name.tag",
+          "settings": {
+            "foreground": "#FF7B72",
+          }
+        },
+        {
+          "scope": "variable.other.object.property",
+          "settings": {
+            "foreground": "#2BBAC5",
+          }
+        },
+        {
+          "scope": "entity.name",
+          "settings": {
+            "foreground": "#2BBAC5",
+          }
+        },
+        {
+          "scope": "support",
+          "settings": {
+            "foreground": "#2BBAC5",
+          }
+        },
+        {
+          "scope": "variable.other",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.property",
+          "settings": {
+            "foreground": "#C9D1D9",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.object.property",
+          "settings": {
+            "foreground": "#C9D1D9",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "entity.name.type",
+          "settings": {
+            "foreground": "#2BBAC5",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "entity",
+          "settings": {
+            "foreground": "#2BBAC5",
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[Dark Party]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language",
+          "settings": {
+            "foreground": "#2bbac5",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#b8b8b8",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "constant",
+          "settings": {
+            "foreground": "#2BBAC5",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.readwrite.tsx",
+          "settings": {
+            "foreground": "#b8b8b8",
+          }
+        },
+        {
+          "scope": "support.class",
+          "settings": {
+            "foreground": "#2bbac5",
+          }
+        },
+        {
+          "scope": "entity.name.type",
+          "settings": {
+            "foreground": "#2bbac5",
+          }
+        },
+        {
+          "scope": "variable.other.constant.property.tsx",
+          "settings": {
+            "foreground": "#D19A66",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.property.tsx",
+          "settings": {
+            "foreground": "#D19A66",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.constant.object.tsx",
+          "settings": {
+            "foreground": "#b8b8b8",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "support.type.primitive.tsx",
+          "settings": {
+            "foreground": "#2bbac5",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "support.type.primitive.ts",
+          "settings": {
+            "foreground": "#2bbac5",
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+  "java.saveActions.organizeImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Dark Party"
+}
