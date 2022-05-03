@@ -1,8 +1,8 @@
 {
   "bracketPairColorizer.depreciation-notice": false,
-  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontFamily": "JetBrains Mono Thin",
   "editor.fontLigatures": true,
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
@@ -13,10 +13,7 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.gpuAcceleration": "off",
-  "workbench.iconTheme": "bearded-icons",
-  "workbench.editorAssociations": {
-    "*.class": "default"
-  },
+  "workbench.iconTheme": "vscode-great-icons",
   "editor.tokenColorCustomizations": {
     "[After Dark No Italics]": {
       "textMateRules": [
@@ -29,8 +26,65 @@
         }
       ]
     },
+    "[True Dark Github Theme]": {
+      "textMateRules": [
+        {
+          "scope": "invalid.illegal",
+          "settings": {
+            "foreground": "#F97583",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.property",
+          "settings": {
+            "foreground": "#F97583",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.other.object",
+          "settings": {
+            "foreground": "#bab9b9",
+            "fontStyle": ""
+          }
+        },
+      ]
+    },
     "[Omni]": {
       "textMateRules": [
+        {
+          "scope": "variable.parameter.function.language.special",
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#B790FF"
+          }
+        },
+        {
+          "scope": "invalid",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "meta.import variable.other.readwrite",
+          "settings": {
+            "fontStyle": ""
+          },
+        },
+        {
+          "scope": "entity.other.inherited-class",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "entity.name.tag",
+          "settings": {
+            "foreground": "#988BC7",
+            "fontStyle": ""
+          }
+        },
         {
           "scope": "punctuation.definition.string.begin",
           "settings": {
@@ -129,7 +183,7 @@
         {
           "scope": "support",
           "settings": {
-            "fontStyle": ""
+            "fontStyle": "",
           }
         },
         {
@@ -148,6 +202,17 @@
           "scope": "variable",
           "settings": {
             "foreground": "#bab9b9"
+          }
+        }
+      ]
+    },
+    "[Synth1983 Green Wave 🌊]": {
+      "textMateRules": [
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            "foreground": "#fff",
+            "fontStyle": ""
           }
         }
       ]
@@ -353,10 +418,107 @@
           }
         }
       ]
+    },
+    "[Seti Monokai]": {
+      "textMateRules": [
+        {
+          "scope": "meta.function-call.generic.python",
+          "settings": {
+            "foreground": "#2cccec"
+          }
+        },
+        {
+          "scope": "support.type.exception.python",
+          "settings": {
+            "foreground": "#2cccec"
+          }
+        },
+        {
+          "scope": "support.function",
+          "settings": {
+            "foreground": "#925bf8"
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#925bf8"
+          }
+        },
+        {
+          "scope": "entity.other.inherited-class",
+          "settings": {
+            "fontStyle": "",
+            "foreground":	"#F92672"
+          }
+        },
+        {
+          "scope": "storage.type",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "support.type",
+          "settings": {
+            "fontStyle": "",
+            "foreground": "#2cccec"
+          }
+        },
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[Gruvbox Glass]": {
+      "textMateRules": [
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
     }
   },
   "java.saveActions.organizeImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Omni",
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "thunder-client.htmlView": "Raw Html",
+  "thunder-client.codeSnippetLanguage": "js-axios",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "d.dubCompiler": "dmd.EXE",
+  "d.stdlibPath": "auto",
+  "d.servedPath": "C:\\Users\\Junior\\AppData\\Roaming\\code-d\\bin\\serve-d.exe",
+  "workbench.colorTheme": "Seti Monokai"
 }
