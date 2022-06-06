@@ -1,11 +1,11 @@
 {
   "bracketPairColorizer.depreciation-notice": false,
-  "editor.fontFamily": "JetBrains Mono Thin",
+  "editor.fontFamily": "Hack Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": true,
+  "editor.detectIndentation": false,
   "editor.rulers": [80],
   "editor.wordWrapColumn": 80,
   "editor.formatOnSave": false,
@@ -13,8 +13,88 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.gpuAcceleration": "off",
-  "workbench.iconTheme": "vscode-great-icons",
+  "[go]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
   "editor.tokenColorCustomizations": {
+    "[Gruber (Almost) Dark]": {
+      "textMateRules": [
+        {
+          "scope": "storage",
+          "settings": {
+            "foreground": "#9E95C7",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.operator.c",
+          "settings": {
+            "foreground": "#cecccc"
+          }
+        },
+        {
+          "scope": "punctuation.definition.string.begin",
+          "settings": {
+            "foreground": "#e4be8f"
+          }
+        },
+        {
+          "scope": "punctuation.definition.string.end",
+          "settings": {
+            "foreground": "#e4be8f"
+          }
+        },
+        {
+          "scope": "string",
+          "settings": {
+            "foreground": "#e4be8f"
+          }
+        },
+        {
+          "scope": "keyword.control.directive.include.c",
+          "settings": {
+            "foreground": "#619fd8"
+          }
+        },
+        {
+          "scope": "entity.name.type",
+          "settings": {
+            "foreground": "#a7f3e1",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "entity.name.function.c",
+          "settings": {
+            "foreground": "#a7f3e1",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.operator.comparison.c",
+          "settings": {
+            "foreground": "#cecccc"
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#cecccc",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "storage.modifier.c",
+          "settings": {
+            "foreground": "#ffdd33",
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    },
     "[After Dark No Italics]": {
       "textMateRules": [
         {
@@ -48,11 +128,29 @@
             "foreground": "#bab9b9",
             "fontStyle": ""
           }
-        },
+        }
       ]
     },
     "[Omni]": {
       "textMateRules": [
+        {
+          "scope": "variable.other.declaration.go",
+          "settings": {
+            "foreground": "#E89E64"
+          }
+        },
+        {
+          "scope": "variable.other.accessor.go",
+          "settings": {
+            "foreground": "#988BC7"
+          }
+        },
+        {
+          "scope": "source.go storage.type",
+          "settings": {
+            "fontStyle": ""
+          }
+        },
         {
           "scope": "variable.parameter.function.language.special",
           "settings": {
@@ -422,6 +520,48 @@
     "[Seti Monokai]": {
       "textMateRules": [
         {
+          "scope": "source.go",
+          "settings": {
+            "foreground": "#2bbac5"
+          }
+        },
+        {
+          "scope": "storage.type.string.go",
+          "settings": {
+            "foreground": "#2bbac5"
+          }
+        },
+        {
+          "scope": "entity.name.type.go",
+          "settings": {
+            "foreground": "#2bbac5"
+          }
+        },
+        {
+          "scope": "punctuation.definition.decorator.python",
+          "settings": {
+            "foreground":	"#F92672"
+          }
+        },
+        {
+          "scope": "entity.name.function.decorator.python",
+          "settings": {
+            "foreground": "#2bbac5"
+          }
+        },
+        {
+          "scope": "meta.item-access.python",
+          "settings": {
+            "foreground": "#2bbac5",
+          }
+        },
+        {
+          "scope": "variable.other.local.c",
+          "settings": {
+            "foreground": "#BAB9B9"
+          }
+        },
+        {
           "scope": "meta.function-call.generic.python",
           "settings": {
             "foreground": "#2cccec"
@@ -520,5 +660,7 @@
   "d.dubCompiler": "dmd.EXE",
   "d.stdlibPath": "auto",
   "d.servedPath": "C:\\Users\\Junior\\AppData\\Roaming\\code-d\\bin\\serve-d.exe",
-  "workbench.colorTheme": "Seti Monokai"
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorTheme": "Gruber (Almost) Dark"
 }
