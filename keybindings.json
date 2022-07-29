@@ -1,0 +1,26 @@
+[
+    { "key": "ctrl+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
+    { "key": "ctrl+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
+    { "key": "ctrl+i", "command": "workbench.action.togglePanel" },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.action.selectTheme"
+    },
+     {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    }
+]
