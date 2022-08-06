@@ -22,5 +22,15 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    }
+    {
+        "key": "ctrl+y",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
     }
 ]
