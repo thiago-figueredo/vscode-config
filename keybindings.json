@@ -27,7 +27,7 @@
         "key": "ctrl+g",
         "command": "workbench.action.compareEditor.nextChange",
         "when": "textCompareEditorVisible"
-    }
+    },
     {
         "key": "ctrl+y",
         "command": "workbench.action.compareEditor.previousChange",
