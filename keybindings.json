@@ -32,5 +32,10 @@
         "key": "ctrl+y",
         "command": "workbench.action.compareEditor.previousChange",
         "when": "textCompareEditorVisible"
+    },
+    { 
+        "key": "ctrl+e",          
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled" 
     }
 ]
