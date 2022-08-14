@@ -2,7 +2,7 @@
     { "key": "shift+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
     { "key": "shift+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
     {
-        "key": "shift+space",
+        "key": "ctrl+shift+space",
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
