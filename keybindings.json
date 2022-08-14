@@ -1,7 +1,6 @@
 [
-    { "key": "ctrl+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
-    { "key": "ctrl+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
-    { "key": "ctrl+i", "command": "workbench.action.togglePanel" },
+    { "key": "shift+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
+    { "key": "shift+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
     {
         "key": "ctrl+space",
         "command": "workbench.action.terminal.toggleTerminal"
