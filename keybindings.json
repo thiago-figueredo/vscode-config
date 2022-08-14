@@ -43,22 +43,22 @@
         "command": "workbench.action.closeActiveEditor" 
     },
     { 
-        "key": "shift+k",              
+        "key": "shift+l",              
         "command": "workbench.action.nextEditor" 
     },
     { 
-        "key": "shift+j",              
+        "key": "shift+h",              
         "command": "workbench.action.previousEditor" 
     },
     { 
-        "key": "ctrl+shift+k",              
+        "key": "ctrl+shift+l",              
         "command": "moveActiveEditor" ,
         "args": {
             "to": "right"
         }
     },
     { 
-        "key": "ctrl+shift+j",              
+        "key": "ctrl+shift+h",              
         "command": "moveActiveEditor" ,
         "args": {
             "to": "left"
