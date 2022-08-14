@@ -1,6 +1,6 @@
 [
-    { "key": "shift+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
-    { "key": "shift+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
+    { "key": "ctrl+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
+    { "key": "ctrl+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
     {
         "key": "ctrl+shift+space",
         "command": "workbench.action.terminal.toggleTerminal"
@@ -85,7 +85,8 @@
     },
     {
         "key": "ctrl+n",
-        "command": "workbench.action.terminal.newInActiveWorkspace"
+        "command": "workbench.action.terminal.newInActiveWorkspace",
+        "when": "!explorerViewletFocus"
     },
     {
         "key": "ctrl+enter",
@@ -121,4 +122,14 @@
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus"
     },
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorTextFocus && !editorTabMovesFocus"
+    }
 ]
