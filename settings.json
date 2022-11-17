@@ -1,112 +1,187 @@
 {
-    "editor.fontFamily": "JetBrains Mono Thin",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 1.6,
-    "editor.fontSize": 14,
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.rulers": [
-        80
-    ],
-    "editor.wordWrapColumn": 80,
-    "editor.minimap.enabled": false,
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.gpuAcceleration": "off",
-    "terminal.integrated.fontFamily": "JetBrains Mono Thin",
-    "[php]": {
-        "editor.formatOnSave": true,
-        "editor.tabSize": 4,
-        "editor.rulers": [
-            84
-        ]
-    },
-    "[python]": {
-        "editor.tabSize": 2
-    },
-    "editor.tokenColorCustomizations": {
-        "[Min Dark]": {
-            "textMateRules": [
-                {
-                    "scope": "variable.language.this",
-                    "settings": {
-                        "foreground": "#F97583",
-                    }
-                },
-                {
-                    "scope": "meta.function-call",
-                    "settings": {
-                        "foreground": "#BBBBBB",
-                    }
-                }
-            ]
-        }
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.inlineSuggest.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "Ubuntu (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu"
-            ]
-        },
-        "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu-20.04"
-            ]
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.fontFamily": "JetBrains Mono Thin",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6,
+  "editor.fontSize": 13.5,
+  "editor.insertSpaces": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.rulers": [80],
+  "editor.wordWrapColumn": 80,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.fontFamily": "JetBrains Mono Thin",
+  "[c]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 2
+  },
+  "[php]": {
     "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+    "editor.tabSize": 4,
+    "editor.rulers": [84]
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 2
+  },
+  "editor.tokenColorCustomizations": {
+    "[Dark Ocean]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "variable.language punctuation.definition.variable.php",
+            "meta.type.parameters entity.name.type",
+            "entity.other.inherited-class",
+            "entity.other.attribute-name",
+            "variable.parameter",
+            "variable.language",
+            "entity.name.type",
+            "support"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
     },
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
-    "emmet.excludeLanguages": [
-        "markdown",
-        "php"
-    ],
-    "diffEditor.ignoreTrimWhitespace": false,
-    "redhat.telemetry.enabled": true,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "workbench.iconTheme": "eq-material-theme-icons-palenight",
-    "yaml.maxItemsComputed": 12000,
-    "workbench.editorAssociations": {
-        "*.sqlite": "default"
-    },
-    "workbench.colorCustomizations": {
-        "[Min Dark]": {
-            "editor.background": "#000000",
-            "sideBar.background": "#000000",
+    "[Dracula]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "support",
+            "entity.other.inherited-class",
+            "entity.name.type",
+            "variable.language",
+            "variable.language punctuation.definition.variable.php"
+          ],
+          "settings": {
+            "fontStyle": "bold"
+          }
         },
-        "[Omni Owl (Minimal Italics)]": {
-            "editor.background": "#000000",
-            "sideBar.background": "#000000",
+        {
+          "scope": "support.function",
+          "settings": {
+            "foreground": "#50FA7B"
+          }
         },
-        "terminal.background": "#000000",
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#E1E1E6"
+          }
+        }
+      ]
     },
-    "workbench.colorTheme": "Omni Owl (Minimal Italics)"
+    "[Dracula Soft]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "support",
+            "entity.name.type",
+            "variable.language",
+            "variable.language punctuation.definition.variable.php",
+            "entity.other.inherited-class",
+            "storage.type.php"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "support.function",
+          "settings": {
+            "foreground": "#50FA7B"
+          }
+        }
+      ]
+    },
+    "[Min Dark]": {
+      "textMateRules": [
+        {
+          "scope": "variable.language.this",
+          "settings": {
+            "foreground": "#F97583"
+          }
+        },
+        {
+          "scope": "meta.function-call",
+          "settings": {
+            "foreground": "#BBBBBB"
+          }
+        }
+      ]
+    }
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    },
+    "Ubuntu-20.04 (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu-20.04"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "emmet.excludeLanguages": ["markdown", "php"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "redhat.telemetry.enabled": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "yaml.maxItemsComputed": 12000,
+  "workbench.editorAssociations": {
+    "*.sqlite": "default"
+  },
+  "workbench.colorCustomizations": {
+    "[Min Dark]": {
+      "editor.background": "#000000",
+      "sideBar.background": "#000000"
+    },
+    "[Dracula]": {
+      "editor.background": "#000000",
+      "sideBar.background": "#000000"
+    },
+    "[Dracula Soft]": {
+      "editor.background": "#000000",
+      "sideBar.background": "#000000"
+    },
+    "[OM Theme (No Italic)]": {
+      "editor.background": "#000000",
+      "sideBar.background": "#000000"
+    }
+  },
+  "cSpell.userWords": ["cnpj"],
+  "workbench.colorTheme": "Min Dark"
 }
