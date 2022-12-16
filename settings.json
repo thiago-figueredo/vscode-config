@@ -1,39 +1,128 @@
 {
   "editor.fontFamily": "JetBrains Mono Thin",
   "editor.fontLigatures": true,
-  "editor.lineHeight": 1.6,
-  "editor.fontSize": 13.5,
+  "editor.lineHeight": 1.5,
+  "editor.fontSize": 15,
   "editor.insertSpaces": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.rulers": [80],
   "editor.wordWrapColumn": 80,
+  "vim.enableNeovim": true,
+  "vim.smartRelativeLine": true,
+  "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.lineHeight": 1,
   "terminal.integrated.fontFamily": "JetBrains Mono Thin",
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "[rust]": {
+    "editor.formatOnSave": false
+  },
   "[c]": {
     "editor.wordBasedSuggestions": false,
+    "editor.formatOnSave": false,
     "editor.tabSize": 2
   },
   "[php]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.tabSize": 4,
-    "editor.rulers": [84]
+    "editor.rulers": [84],
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.tabSize": 2
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
     "editor.tabSize": 2
   },
   "editor.tokenColorCustomizations": {
+    "[monokai-charcoal (red)]": {
+      "textMateRules": [
+        {
+          "scope": ["variable.parameter.c", "support.type", "storage.type"],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[One Monokai]": {
+      "textMateRules": [
+        {
+          "scope": ["variable.parameter"],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "storage.type",
+          "settings": {
+            "foreground": "#E06C75",
+          }
+        },
+        {
+          "scope": ["variable.other"],
+          "settings": {
+            "foreground": "#56B6C2",
+          }
+        }
+      ]
+    },
+    "[Darkbox (Darker)]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "storage",
+            "keyword",
+            "entity.name.type.c",
+            "entity.name.function.c",
+            "constant.language.c",
+            "meta.function-call.c",
+            "entity.name.function.preprocessor.c",
+            "variable.other.enummember.c",
+            "entity.name.function",
+            "entity.name.type",
+            "support.type",
+            "entity.other.attribute-name",
+            "constant"
+          ],
+          "settings": {
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": ["entity.name.function.c"],
+          "settings": {
+            "foreground": "#83A598"
+          }
+        },
+        {
+          "scope": ["storage.modifier", "storage.type.function"],
+          "settings": {
+            "foreground": "#FB4934"
+          }
+        },
+        {
+          "scope": ["variable.parameter.c", "variable.other.local.c"],
+          "settings": {
+            "foreground": "#e1e1e6e8",
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
     "[Dark Ocean]": {
       "textMateRules": [
         {
@@ -131,7 +220,10 @@
       "icon": "terminal-powershell"
     },
     "Command Prompt": {
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
       "args": [],
       "icon": "terminal-cmd"
     },
@@ -159,7 +251,6 @@
   "redhat.telemetry.enabled": true,
   "git.confirmSync": false,
   "git.autofetch": true,
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "yaml.maxItemsComputed": 12000,
   "workbench.editorAssociations": {
     "*.sqlite": "default"
@@ -177,11 +268,19 @@
       "editor.background": "#000000",
       "sideBar.background": "#000000"
     },
+    "[One Monokai]": {
+      "editor.background": "#000000",
+      "terminal.background": "#000000",
+      "sideBar.background": "#000000"
+    },
     "[OM Theme (No Italic)]": {
       "editor.background": "#000000",
+      "terminal.background": "#000000",
       "sideBar.background": "#000000"
     }
   },
   "cSpell.userWords": ["cnpj"],
-  "workbench.colorTheme": "Min Dark"
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.colorTheme": "One Monokai"
 }
