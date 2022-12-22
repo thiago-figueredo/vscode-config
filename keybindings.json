@@ -1,4 +1,5 @@
-[
+[       
+    { "key": "ctrl+g", "command": "editor.action.goToReferences" },
     { "key": "ctrl+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
     { "key": "ctrl+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
     {
