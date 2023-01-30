@@ -1,22 +1,36 @@
 {
-  "editor.fontFamily": "JetBrains Mono Thin",
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  // "editor.fontFamily": "JetBrains Mono Thin",
+  "editor.fontFamily": "Anonymous Pro",
   "editor.fontLigatures": true,
-  "editor.lineHeight": 1.5,
-  "editor.fontSize": 15,
+  "editor.lineHeight": 2,
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 18,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
+  "editor.detectIndentation": true,
   "editor.rulers": [80],
   "editor.wordWrapColumn": 80,
   "vim.enableNeovim": true,
   "vim.smartRelativeLine": true,
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.gpuAcceleration": "off",
-  "terminal.integrated.lineHeight": 1,
-  "terminal.integrated.fontFamily": "JetBrains Mono Thin",
+  "terminal.integrated.lineHeight": 1.5,
+  // "terminal.integrated.fontFamily": "JetBrains Mono Thin",
+  "terminal.integrated.fontFamily": "Anonymous Pro",
   "rust-analyzer.inlayHints.parameterHints.enable": false,
   "rust-analyzer.inlayHints.closingBraceHints.enable": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "never",
+  "rust-analyzer.inlayHints.chainingHints.enable": true,
   "[rust]": {
     "editor.formatOnSave": false
   },
@@ -29,31 +43,101 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.rulers": [84],
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.formatOnSave": true,
     "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "[python]": {
     "editor.tabSize": 2
   },
   "editor.tokenColorCustomizations": {
-    "[monokai-charcoal (red)]": {
+    "[Pale Fire Darker]": {
       "textMateRules": [
         {
-          "scope": ["variable.parameter.c", "support.type", "storage.type"],
+          "scope": "support.class",
+          "settings": {
+            "foreground": "#E2D082",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": ["entity.name.type", "entity.other.inherited-class.php"],
+          "settings": {
+            "foreground": "#3FB0B6",
+            "fontStyle": "bold"
+          }
+        }
+      ]
+    },
+    "[Miramare]": {
+      "textMateRules": [
+        {
+          "scope": ["variable.parameter"],
           "settings": {
             "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[Abyss]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "support.class",
+            "storage.type",
+            "entity.name.type",
+            "entity.other.inherited-class"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": ["storage.type", "storage", "keyword", "variable.language.this.php"],
+          "settings": {
+            "foreground": "#ff4180",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": ["entity.name.type", "entity.other.inherited-class", "entity.name.function"],
+          "settings": {
+            "foreground": "#FFEEBB",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "support.class",
+          "settings": {
+            "foreground": "#6688CC",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#E1E1E6",
           }
         }
       ]
@@ -69,13 +153,17 @@
         {
           "scope": "storage.type",
           "settings": {
-            "foreground": "#E06C75",
+            "foreground": "#E06C75"
           }
         },
         {
-          "scope": ["variable.other"],
+          "scope": [
+            "variable.other",
+            "entity.name.type",
+            "entity.other.inherited-class"
+          ],
           "settings": {
-            "foreground": "#56B6C2",
+            "foreground": "#56B6C2"
           }
         }
       ]
@@ -170,6 +258,62 @@
         }
       ]
     },
+    "[oh-lucy-evening]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "comment keyword",
+            "storage.type",
+            "variable.parameter",
+            "entity.other.attribute-name",
+            "storage.modifier",
+            "variable.language",
+            "entity.other.inherited-class",
+            "support.type"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "variable.language",
+          "settings": {
+            "foreground": "#B898DD",
+          }
+        },
+        {
+          "scope": ["entity.other.attribute-name"],
+          "settings": {
+            "foreground": "#7EC49D"
+          }
+        },
+        {
+          "scope": ["storage.type", "storage.modifier", "keyword", "keyword.control", "keyword.operator"],
+          "settings": {
+            "foreground": "#ff4180",
+          }
+        },
+        {
+          "scope": ["entity.name.function", "support.function"],
+          "settings": {
+            "foreground": "#39e084"
+          },
+        },
+        {
+          "scope": ["support.class", "entity.other.inherited-class", "entity.name.type.class.php"],
+          "settings": {
+            "foreground": "#25d1e7",
+          }
+        },
+        {
+          "scope": "entity.name",
+          "settings": {
+            "foreground": "#56C6D5"
+          }
+        }
+      ]
+    },
     "[Dracula Soft]": {
       "textMateRules": [
         {
@@ -179,7 +323,8 @@
             "variable.language",
             "variable.language punctuation.definition.variable.php",
             "entity.other.inherited-class",
-            "storage.type.php"
+            "storage.type.php",
+            "variable.parameter"
           ],
           "settings": {
             "fontStyle": ""
@@ -189,6 +334,16 @@
           "scope": "support.function",
           "settings": {
             "foreground": "#50FA7B"
+          }
+        }
+      ]
+    },
+    "[Omni Owl (Minimal Italics)]": {
+      "textMateRules": [
+        {
+          "scope": "meta.type.parameters entity.name.type",
+          "settings": {
+            "foreground": "#988BC7"
           }
         }
       ]
@@ -273,14 +428,25 @@
       "terminal.background": "#000000",
       "sideBar.background": "#000000"
     },
+    "[Theme]": {
+      "editor.background": "#000000",
+      "terminal.background": "#000000",
+      "sideBar.background": "#000000"
+    },
     "[OM Theme (No Italic)]": {
       "editor.background": "#000000",
       "terminal.background": "#000000",
       "sideBar.background": "#000000"
+    },
+    "[oh-lucy-evening]": {
+      "editor.background": "#080f11",
+      "terminal.background": "#080f11"
     }
   },
   "cSpell.userWords": ["cnpj"],
-  "workbench.iconTheme": "helium-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "One Monokai"
+  "workbench.iconTheme": "material-icon-theme",
+  "intelephense.diagnostics.undefinedProperties": false,
+  "workbench.colorTheme": "Abyss",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar"
 }
